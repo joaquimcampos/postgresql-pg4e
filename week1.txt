@@ -1,0 +1,29 @@
+- **Setup/Commands**
+	-
+	  ```
+	  sudo systemctl start postgresql
+	  ```
+	-
+	  ```
+	  sudo systemctl enable postgresql
+	  ```
+	-
+	  ```
+	  sudo su - postgres
+	  ```
+	- Access postgreSQL prompt: `psql`
+	- Change password for `postgres` user: `\password postgres` (inside PostgreSQL prompt)
+		- Password: `postgres`
+	- Create a DB: `CREATE DATABASE mydatabase;`
+	- Exit PostgreSQL prompt: `\q`
+	- To exit the `postgres` user's shell, type: `exit`
+	- You can install pgAdmin to manage your PostgreSQL server through a graphical interface: `sudo apt install pgadmin4`
+	- List the databases: `\l`
+	- `CREATE USER pg4e WITH PASSOWRD 'secret';`
+	- `CREATE DATABASE people WITH OWNER 'pg4e';`
+	- Then access with `psql people pg4e'
+	- show the tables :`\dt`
+		- Column name - data type
+		- Ending with semi-colon
+		- 128 characters long (used for optimization)
+	- `\d+ users` means "show me the schema"
