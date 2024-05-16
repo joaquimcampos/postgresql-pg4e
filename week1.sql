@@ -1,0 +1,6 @@
+CREATE USER pg4e WITH PASSOWRD 'secret';
+CREATE DATABASE people WITH OWNER 'pg4e';
+CREATE TABLE users(
+  name VARCHAR(128),
+  email VARCHAR(128)
+);
